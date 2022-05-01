@@ -1,0 +1,164 @@
+.nav {
+    overflow: hidden;
+}
+
+.sk {
+    position: absolute;
+    border-left: 1px solid #c5161d;
+    top: 43px;
+    left: 185px;
+    padding: 3px 0 0 13px;
+}
+
+.sk_list {
+    float: left;
+}
+
+.sk_list ul li {
+    float: left;
+}
+
+.sk_list ul li a {
+    display: block;
+    line-height: 47px;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+}
+
+.sk_con {
+    float: left;
+}
+
+.sk_con ul li {
+    float: left;
+}
+
+.sk_con ul li a {
+    display: block;
+    line-height: 49px;
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.sk_con ul li:last-child a::after {
+    content: '\e91e';
+    font-family: 'icomoon';
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.sk_bd ul li {
+    float: left;
+    width: 290px;
+    height: 460px;
+    margin: 10px 10px 10px 0;
+}
+
+.sk_bd ul li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.sk_bd ul li .top {
+    height: 412px;
+    width: 100%;
+    border: 1px solid #c5161d;
+    border-bottom: 0;
+}
+
+.sk_bd ul li .top img {
+    width: 138px;
+    height: 252px;
+    margin-top: 20px;
+    margin-left: 73px;
+}
+
+.sk_bd ul li .top h4 {
+    line-height: 20px;
+    font-weight: normal;
+    margin: 15px;
+}
+
+.sk_bd ul li .top .money {
+    color: #c5161d;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 15px;
+}
+
+.sk_bd ul li .top .money::after {
+    content: '¥6988';
+    font-size: 14px;
+    color: #a5a5a5;
+    margin-left: 10px;
+    text-decoration: line-through;
+}
+
+.sk_bd ul li .top .under {
+    width: 100%;
+    margin-left: 10px;
+    vertical-align: bottom;
+}
+
+.under .per,
+.ttop,
+.remain {
+    float: left;
+}
+
+.under .jdt {
+    width: 130px;
+    height: 10px;
+    border: 1px solid #c5161d;
+    border-radius: 5px;
+}
+
+.under .jdt .rred {
+    padding-left: -1px;
+    width: 117px;
+    height: 8px;
+    background-color: #c5161d;
+}
+
+.ttop {
+    width: 130px;
+    height: 10px;
+    margin: 5px 12px 0;
+}
+
+.under .remain,
+.per {
+    font-size: 14px;
+}
+
+.sk_bd .bot {
+    width: 100%;
+    height: 48px;
+    background-color: #c5161d;
+    color: aliceblue;
+    line-height: 48px;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+/* .sk_container .sk_bd {
+    width: 100%;
+    height: 2000px;
+} */
+
+.clearfix:after {
+    /*伪元素是行内元素 正常浏览器清除浮动方法*/
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+    /*ie6清除浮动的方式 *号只有IE6-IE7执行，其他浏览器不执行*/
+}
